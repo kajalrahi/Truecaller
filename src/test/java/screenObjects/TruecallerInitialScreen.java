@@ -28,6 +28,15 @@ public class TruecallerInitialScreen {
         driver.findElement(By.xpath(stopSpamNowButton)).click();
     }
 
+    public void handleAlert() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        driver.switchTo().alert().dismiss();
+    }
+
     public void clickAllowButton() {
         new Helper(driver).waitForElementToBeVisibleById(allowButton).click();
     }
