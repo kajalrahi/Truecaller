@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utility.Helper;
 
-public class PermissionScreen extends DefaultDriver{
+public class PermissionScreen {
     private final AndroidDriver driver;
     private final String permissionScreenTitle = "//android.widget.TextView[@resource-id=\"com.truecaller:id/permissions_title\"]";
     private final String continueButton = "//android.widget.Button[@resource-id=\"android:id/button1\"]";
