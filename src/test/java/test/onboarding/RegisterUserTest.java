@@ -44,6 +44,7 @@ public class RegisterUserTest {
         extentTest = extentReports.createTest("Register new user on Truecaller.");
         truecallerInitialScreen.verifyScreenTitleIsDisplayed();
         truecallerInitialScreen.clickStopSpamNowButton();
+        truecallerInitialScreen.handleAlert();
         extentTest.log(Status.PASS, "Launched initial screen.");
 
         permissionScreen.verifyPermissionScreenIsShown();
