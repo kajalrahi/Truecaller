@@ -45,7 +45,7 @@ public class RegisterUserTest {
         truecallerInitialScreen.verifyScreenTitleIsDisplayed();
         truecallerInitialScreen.clickStopSpamNowButton();
         truecallerInitialScreen.handleAlert();
-        extentTest.log(Status.PASS, "Launched initial screen.");
+        extentTest.log(Status.PASS, "App is launched and click stop spam button and handle alert.");
 
         permissionScreen.verifyPermissionScreenIsShown();
         permissionScreen.clickContinueButton();
